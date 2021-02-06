@@ -26,8 +26,8 @@ Não é necessário que o `target` seja um arquivo, pode apenas ser um nome para
 
 
 ### Referências
-- [Um aleatório ](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html#zz-2.2).
-- [Mais  outro tutorial](https://opensource.com/article/18/8/what-how-makefile) que eu completei
+- [Um tutorial que vai desde o basicão](https://opensource.com/article/18/8/what-how-makefile) que eu completei
+- [Mias um aleatório ](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html#zz-2.2).
 pra entender melhor sobre Makefiles.
 - [Outro](https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
 - [Um projeto mais completo](https://www.partow.net/programming/makefile/index.html)
