@@ -1,0 +1,13 @@
+.DEFAULT_GOAL :=generate # comando make vai fazer o target generate por padrão
+all: say-hello generate # comando make fazer todos os targets listados em no target all
+
+say-hello:
+	@echo "Hello World"
+
+generate:
+	@echo "Creating empty text files..."
+	touch file-{1..10}.txt
+
+clean:
+	@echo "cleaning up..."
+	rm *.txt
