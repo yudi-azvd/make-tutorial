@@ -8,23 +8,21 @@ CC = gcc
 BUILD_DIR ?= ./build
 SRC_DIRS ?= ./src 
 
-# SRCS := $(wildcard $(SRC_DIRS)/*.c)
-SRCS := $(wildcard ./**/*.c)
+SRCS := $(wildcard ./src/hello.c ./**/**/*.c)
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 
-INC_DIRS := ./inlcude/**
-INC_FLAGS := $(addprefix -I, $(INC_DIRS))
 
+# $(TARGET_EXEC): $(OBJS)
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
-	# @echo "sources $(SRCS)"
-	# @echo "objs $(OBJS)"
-	@echo "inc dirs $(INC_DIRS)"
-	$(CC)  $(OBJS) -o $@ 
+	@echo "Building executable $@"
+	@$(CC)  $(OBJS) -o $@
 
 # c source
-$(BUILD_DIR)/%.c.o: %.c 
-	$(MKDIR_P) $(dir $@)
-	$(CC) -c $< -o $@
+$(BUILD_DIR)/%.c.o: %.c
+	@echo "Building src file: $<"
+	@echo "	output file: $@\n"
+	@$(MKDIR_P) $(dir $@)
+	@$(CC) -c $< -o $@
 
 
 .PHONY: clean
