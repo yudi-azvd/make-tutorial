@@ -26,12 +26,14 @@ TEST_OBJS := $(filter-out build/src/main.c.o, $(OBJS)) \
 
 # all: $(TARGET_EXEC) $(TESTS_EXEC) # executáveis dentro no diretório raíz
 all: $(BUILD_DIR)/$(TARGET_EXEC) test # executáveis dentro de build/
+# all: $(BUILD_DIR)/$(TARGET_EXEC) # executáveis dentro de build/
 
 
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS) $(MAIN) # 
 # $(TARGET_EXEC): $(OBJS) $(MAIN)
-	@echo ">> Building main executable $@"
+	@echo ">> Building main executable"
 	@$(CXX)  $(OBJS) -o $@
+	@echo " > Done $@"
 
 
 # c source
