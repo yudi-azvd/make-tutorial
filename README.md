@@ -32,6 +32,7 @@ Esse **[>> aqui <<](https://github.com/yudi-azvd/sb-test)**.
 - [Tutorial em um gist](https://gist.github.com/isaacs/62a2d1825d04437c6f08)
 - [Outro bem basicão](https://cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 - [Outro levemente modularizado](https://github.com/remonbonbon/makefile-example)
+- [Tutorial introdutório da documentação oficial](https://www.gnu.org/software/make/manual/make.html#Introduction)
 
 ### Referências
 - [Um tutorial que vai desde o basicão](https://opensource.com/article/18/8/what-how-makefile) que eu completei
