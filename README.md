@@ -1,6 +1,5 @@
 # Tutorial Make
-Um pouco dos estudos sobre Makefiles.
-
+Um pouco dos estudos sobre Makefiles. [Documentação oficial](https://www.gnu.org/software/make/manual/make.html).
 
 ## O que eu aprendi
 ```Makefile
@@ -25,9 +24,14 @@ Não é necessário que o `target` seja um arquivo, pode apenas ser um nome para
 - `$?`: the names of all prerequisites that are newer than the target, separated by spaces.
 
 
-## Repositório teste que muito bom pra SB
+## Repositório teste que deu muito bom pra SB
 Esse **[>> aqui <<](https://github.com/yudi-azvd/sb-test)**.
 
+
+## Mais tutoriais pra seguir no futuro:
+- [Tutorial em um gist](https://gist.github.com/isaacs/62a2d1825d04437c6f08)
+- [Outro bem basicão](https://cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+- [Outro levemente modularizado](https://github.com/remonbonbon/makefile-example)
 
 ### Referências
 - [Um tutorial que vai desde o basicão](https://opensource.com/article/18/8/what-how-makefile) que eu completei
