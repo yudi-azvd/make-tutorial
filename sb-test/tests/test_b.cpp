@@ -8,7 +8,7 @@ int factorial(int number) { return number <= 1 ? number : factorial(number - 1) 
 
 TEST_CASE("Another test file") {
     CHECK(factorial(1) == 1);
-    CHECK(sum_ints(1, 1) == -2);
+    CHECK(sum_ints(1, 1) == 2);
 
     std::cout << "olha só" << std::endl;
 
